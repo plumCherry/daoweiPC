@@ -15,7 +15,7 @@
                 <div class="left">
                     <b>{{server.title}}</b>
                     <span>营业时间 ：  </span><span>{{server.startTime}}-{{server.endTime}}</span>&nbsp
-                    <span>最近可预约时间 :  </span><span>09月07日 10:30</span>
+                    <span>最近可预约时间 :  </span><span class="reserveTime">{{server.nextAppointTime}}</span>
                 </div>
                 <div class="right">
                     <div>
@@ -94,23 +94,17 @@
                             {{each comment.comments}}
                             <li>
                                 <div class="avatar">
-                                    <img src={{$value.iconUrl}}>
+                                    <img  class="img" src={{$value.iconUrl}}>
                                 </div>
                                 <div class="user_detail">
                                     <p>{{$value.nick}}</p>
                                     <div class="score">
-                                        <span class="star">
-                                            <img src="images/red_star.png">
-                                            <img src="images/red_star.png">
-                                            <img src="images/red_star.png">
-                                            <img src="images/red_star.png">
-                                            <img src="images/red_star.png">
-                                        </span>
-                                        <span class="time">2017-09-07</span>
+                                        <span class="star">{{$value.star}}</span>
+                                        <span class="time">{{$value.createtime}}</span>
                                     </div>
                                     <p>{{$value.comment}}</p>
                                     <div class="area">
-                                        <img src="images/position.jpg">
+                                        <img  src="images/position.jpg">
                                         <span>{{$value.city}} {{$value.area}} </span>
                                     </div>
                                 </div>

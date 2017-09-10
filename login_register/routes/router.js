@@ -22,7 +22,7 @@ router.get('/', function (req, res) {
 
 });
 router.get('/server', function (req, res) {
-    axios.get('http://www.daoway.cn/service/serviceItems?start=1&size=56')
+    axios.get('http://www.daoway.cn/service/serviceItems?start=1&size=68')
         .then(function (response) {
             var obj = {
                 server: response.data
@@ -55,7 +55,7 @@ router.get('/serviceItems',function (req,res,next) {
                     console.log(error)
                 });
 
-            /* moment(value).format('YYYY-MM-DD ')*/
+
         })
         .catch(function (error) {
             console.log(error);

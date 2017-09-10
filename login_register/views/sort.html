@@ -41,7 +41,7 @@
                         <b>服务范围</b>
                         <p>{{sort.service.coverArea}}</p>
                         <b>服务时间</b>
-                        <p>{{sort.service.startTime}}-{{sort.service.endTime}}   最近可预约时间:<i>09月09日 12:00</i></p>
+                        <p>{{sort.service.startTime}}-{{sort.service.endTime}}   最近可预约时间:<i class="reserveTime">{{sort.service.nextAppointTime}}</i></p>
                         <b>订购须知</b>
                         <pre style="background: #FFFCF1">
 {{sort.service.orderingNotice}}
@@ -69,4 +69,6 @@
         {{include "../public/footer"}}
     </div>
 </body>
+<script type="text/javascript" src="javascripts/jquery-1.12.3.js"></script>
+<script type="text/javascript" src="javascripts/sort.js"></script>
 </html>
