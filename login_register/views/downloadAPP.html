@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>到位APP - 高品质上门服务</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="stylesheets/reset.css">
+    <link rel="stylesheet" href="stylesheets/downloadAPP.css">
+</head>
+<body>
+    <div id="d_wrap">
+        {{include "../public/header"}}
+        <div id="d_content">
+            <div class="bigImg">
+                <div class="text">
+                    <img src="images/app-yong-ma.png">
+                    <div class="btns">
+                        <a href="javascript:;">
+                            <img src="images/iph.png">
+                            <span>iPhone下载</span>
+                        </a>
+                        <a href="javascript:;">
+                            <img src="images/and.png">
+                            <span>Android下载</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="features">
+                <div class="title">
+                    <img src="images/xiazaiye-_05.jpg">
+                    <h3>精选优质服务    全程品质保障</h3>
+                </div>
+                <ul class="imgList">
+                    {{each down}}
+                    <li>
+                        <img src={{$value.images}}>
+                        <div>
+                            <b>{{$value.name}}</b></br>
+                            <span>{{$value.item}}</span>
+                        </div>
+                    </li>
+                    {{/each}}
+                  <!--  <li>
+                        <img src="images/xiazaiye-_09.jpg">
+                        <div>
+                            <b>家政</b></br>
+                            <span>小时工/保姆/阿姨/月嫂</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/xiazaiye-_09.jpg">
+                        <div>
+                            <b>家政</b></br>
+                            <span>小时工/保姆/阿姨/月嫂</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/xiazaiye-_09.jpg">
+                        <div>
+                            <b>家政</b></br>
+                            <span>小时工/保姆/阿姨/月嫂</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/xiazaiye-_09.jpg">
+                        <div>
+                            <b>家政</b></br>
+                            <span>小时工/保姆/阿姨/月嫂</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/xiazaiye-_09.jpg">
+                        <div>
+                            <b>家政</b></br>
+                            <span>小时工/保姆/阿姨/月嫂</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/xiazaiye-_09.jpg">
+                        <div>
+                            <b>家政</b></br>
+                            <span>小时工/保姆/阿姨/月嫂</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/xiazaiye-_09.jpg">
+                        <div>
+                            <b>家政</b></br>
+                            <span>小时工/保姆/阿姨/月嫂</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/xiazaiye-_09.jpg">
+                        <div>
+                            <b>家政</b></br>
+                            <span>小时工/保姆/阿姨/月嫂</span>
+                        </div>
+                    </li>-->
+                </ul>
+            </div>
+            <div class="Introduction">
+                <div class="one">
+                    <img src="images/xiazaiye-_31.jpg">
+                    <div>
+                        <img src="images/xiazaiye-_34.jpg">
+                        <h3>轻松比价格   比品质   比速度</h3>
+                    </div>
+                </div>
+                <div class="two">
+                    <img src="images/xiazaiye-_39.jpg">
+                    <div>
+                        <img src="images/xiazaiye-_03.jpg">
+                        <h3>不满意重做    未成交100%退款</h3>
+                    </div>
+                </div>
+                <div class="one">
+                    <img class="img_3" src="images/xiazaiye-_43.jpg">
+                    <div>
+                        <img src="images/xiazaiye-_45.jpg">
+                        <h3>到位用户专享    好服务更便宜</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{include "../public/footer"}}
+    </div>
+</body>
+</html>

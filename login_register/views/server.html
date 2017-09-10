@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>到位APP - 高品质上门服务</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="stylesheets/reset.css">
+    <link rel="stylesheet" href="stylesheets/server.css">
+</head>
+<body>
+    <div id="s_wrap">
+        {{include "../public/header"}}
+        <div id="s_content">
+            <div class="bgcContent">
+                <div class="server">
+                    <h3>服务商</h3>
+                    <ul class="imgList">
+                        {{each server.data}}
+                        <li>
+                            <a href="/serviceItems?2&serviceId={{$value.serviceId}}">
+                                <img src={{$value.imgUrl}}>
+                                <div class="icon">
+                                    <img src="images/home1.png">
+                                    <p>{{$value.title}}</p>
+                                </div>
+                                <div class="data">
+                                    <span>已接单{{$value.orderTakingCount}}单</span>
+                                    <span>好评{{$value.positiveCommentRate}}</span>
+                                </div>
+                            </a>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="rightCode">
+                    <img src="images/tuijianfuwushang_03.jpg">
+                    <div class="erweima">
+                        <img src="images/daowayApp.png">
+                    </div>
+                </div>
+            </div>
+            <div class="s_button">
+                <span>查看更多商家</span>
+            </div>
+        </div>
+        {{include "../public/footer"}}
+    </div>
+</body>
+<script src="javascripts/jquery-1.12.3.js" ></script>
+<script type="text/javascript" src="javascripts/server.js"></script>
+</html>

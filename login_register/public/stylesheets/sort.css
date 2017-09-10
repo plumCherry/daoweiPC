@@ -1,0 +1,177 @@
+
+#sortContent{
+    display: inline-block;
+    width: 100%;
+    background: #F8F8F8;
+
+}
+#bgContent{
+    width: 1190px;
+    margin: 0 auto;
+}
+.title{
+    line-height: 80px;
+    font-size: 18px;
+    color: #494949;
+}
+.title p{
+    font-weight: bold;
+}
+.title p>b{
+    color: #EA4942;
+}
+.sortLeft{
+    display: inline-block;
+    width: 950px;
+}
+.sortLeft .top{
+    width: 100%;
+    height: 220px;
+    background: white;
+    border: 1px solid #cecece ;
+}
+.sortLeft .top .imgLeft{
+    float: left;
+    margin: 30px;
+}
+.sortLeft .top .imgLeft img{
+    width: 160px;
+    height: 160px;
+}
+.sortLeft .top .imgLeft div{
+    float: right;
+    margin-left: 30px;
+}
+.sortLeft .top .imgLeft div h3{
+    color: #1d1515;
+    font-size: 18px;
+    line-height: 50px;
+}
+.sortLeft .top .imgLeft div p{
+    line-height: 40px;
+}
+.sortLeft .top .imgLeft div>p>b>b{
+    color: #EA4942;
+    font-size: 22px;
+    margin-left: 15px;
+}
+.sortLeft .top .imgLeft div>p>b{
+    color: #EA4942;
+}
+.sortLeft .top .imgLeft div p:last-child span{
+    margin-left: 15px;
+    color: #EA4942;
+    font-size: 16px;
+}
+
+
+.sortLeft .top .cordRight{
+    float: right;
+    margin-top: 25px;
+    margin-right: 50px;
+}
+.sortLeft .top .cordRight img{
+    width: 110px;
+    height: 110px;
+}
+.sortLeft .top .cordRight div{
+    text-align: center;
+}
+.sortLeft .top .cordRight p{
+    font-size: 16px;
+    line-height: 30px;
+}
+.sortLeft .top .cordRight b{
+    font-size: 16px;
+    color: #EA4942;
+    line-height: 30px;
+}
+
+.sortRight{
+    display: inline-block;
+    float: right;
+}
+.sortRight .sortBox{
+    background: white;
+    width: 225px;
+    height: 350px;
+    border: 1px solid #cecece ;
+}
+.sortBox h3{
+    font-size: 20px;
+    border-bottom: 1px solid #cecece;
+    line-height: 60px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.sortBox img{
+    width: 80px;
+    height: 80px;
+    margin: 40px 70px 20px 70px;
+}
+.sortBox>p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+.sortBox>div{
+
+    padding: 0 10px;
+    margin-top: 25px;
+}
+.sortBox>div>p{
+    text-align: left;
+    font-size: 16px;
+    line-height: 36px;
+}
+.sortBox>div p i{
+    color: #fb474f;
+    float: right;
+    font-style: normal;
+}
+.serviceDes{
+    width: 100%;
+    background: white;
+    border: 1px solid #cecece ;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 14px;
+}
+.serviceDes b{
+    display: block;
+    font-size: 14px;
+    line-height: 60px;
+    color: #1f2121;
+    margin-left: 25px;
+}
+.serviceDes b:after{
+    content: "";
+    display: block;
+    width: 58px;
+    height: 4px;
+    background: #EA4942 ;
+    margin-top: -15px;
+}
+.serviceDes pre{
+    margin-top: 20px;
+    line-height: 24px;
+    color: #c333;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.serviceDes p{
+    margin: 10px 25px;
+    line-height: 24px;
+    color: #c333;
+}
+.serviceDes p>i{
+    color: #EA4942 ;
+    font-style: normal;
+}
+.serviceDes p:last-child{
+    margin-bottom: 25px;
+}
+.serviceDes pre:last-of-type{
+    padding: 20px 20px 0 20px;
+}

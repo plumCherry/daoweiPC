@@ -1,0 +1,156 @@
+#d_content{
+    width: 100%;
+}
+#d_content .bigImg{
+    position: relative;
+    width: 100%;
+    height: 420px;
+    background: url("../images/xiazaiye-_02.jpg") no-repeat;
+    background-position: 50% 0;
+}
+.bigImg .text {
+    position: absolute;
+    left: 46%;
+    top: 50%;
+    width: 330px;
+    height: 110px;
+}
+.bigImg .text>img{
+    float: left;
+    width: 92px;
+    height: 92px;
+    margin: 10px 20px 10px 10px;
+}
+.bigImg .text .btns{
+    overflow: hidden;
+}
+.bigImg .text .btns a{
+    float: left;
+    width: 190px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+.bigImg .text .btns a:first-child{
+    background: #E62E36;
+}
+.bigImg .text .btns a:last-child{
+    background: #A0C842;
+}
+.bigImg .text .btns a img{
+    float: left;
+    width: 22px;
+    height: 27px;
+    margin-left: 25px;
+    margin-top: 6px;
+}
+.bigImg .text .btns a span{
+    float: left;
+    font-size: 16px;
+    line-height: 40px;
+    margin-left: 20px;
+}
+
+.features{
+    display: inline-block;
+    width: 100%;
+    background: white;
+}
+.features .title{
+    margin: 60px auto;
+    width: 300px;
+}
+.features .title img{
+    margin-left: 15px;
+}
+.features .title h3{
+    margin-top: 20px;
+    font-size: 22px;
+    color:#3d3838
+}
+.features .imgList{
+    width: 1190px;
+    /*height: 500px;*/
+    margin: 0 auto;
+    background: white;
+}
+.features .imgList li{
+    margin: 6px;
+    float: left;
+    border: 1px solid #bdbdbd;
+    width: 380px;
+    height: 215px;
+}
+.features .imgList li img{
+    float: left;
+    margin: 25px;
+}
+.features .imgList li>div{
+    width: 145px;
+    height: 105px;
+    display: inline-block;
+    margin-top: 20%;
+}
+.features .imgList li b{
+    font-size: 18px;
+    line-height: 40px;
+}
+.features .imgList li span{
+    line-height: 20px;
+}
+
+.Introduction{
+    width: 100%;
+    margin-top: 30px;
+}
+.Introduction .one{
+    overflow: hidden;
+    height: 480px;
+    width: 100%;
+    background: #FBF8F8;
+}
+.Introduction>.one>img{
+    float: right;
+    width: 305px;
+    height:373px;
+    margin: 50px 300px 50px 0;
+}
+.Introduction>.one>.img_3{
+    width: 401px;
+    height: 378px;
+}
+.Introduction .one div{
+    float: left;
+    width: 300px;
+    height: 50px;
+    margin: 200px 0 200px 200px;
+}
+.Introduction .one div>img{
+    margin-left: 25px;
+}
+.Introduction div h3{
+    font-size: 22px;
+    color:#3d3838;
+    line-height: 30px;
+}
+
+.Introduction .two{
+    overflow: hidden;
+    height: 480px;
+    width: 100%;
+    background: white;
+}
+
+.Introduction .two>img{
+    float: left;
+    width: 614px;
+    height: 380px;
+    margin: 50px 0 50px 200px;
+}
+.Introduction .two div{
+    float: right;
+    width: 300px;
+    height: 50px;
+    margin: 200px 230px 200px 0;
+}

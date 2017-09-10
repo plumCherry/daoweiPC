@@ -1,0 +1,87 @@
+#positionWrap{
+    width: 100%;
+    height: 70px;
+    transform-origin: top;
+    z-index: 2;
+}
+#positionWrap.headAni{
+    animation: 1s RT;
+}
+@keyframes RT {
+    from{
+        transform: rotateX(90deg);
+    }
+    t0{
+
+    }
+}
+
+#h_wrap{
+   /*position: relative;*/
+    background: rgba(255,255,255,0.9);
+    /*z-index: 3;*/
+    width: 100%;
+    padding: 0 80px;
+    box-sizing: border-box;
+    left: 0;
+    right: 0;
+    height: 70px;
+
+}
+#h_logo{
+    position: absolute;
+    margin-top: 12px;
+    margin-bottom: 18px;
+    width: 280px;
+    height: 100%;
+}
+#h_city{
+    position: absolute;
+    left: 450px;
+    width: 140px;
+    height: 30px;
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#h_city a{
+    color: black;
+    vertical-align: top;
+}
+
+#h_list{
+    float: right;
+    margin-top: 25px;
+}
+#h_list li{
+    font-size: 16px;
+    float: left;
+    margin-left: 28px;
+}
+#h_list li a{
+    color: black;
+    font-weight: bold;
+}
+#h_list li a.active{
+    color: #E72B2F;
+}
+#h_list li:last-child{
+    background: #E72B2F;
+    border: 1px;
+    border-radius: 6px;
+    height: 22px;
+    width: 72px;
+    margin-top: -8px;
+    padding-top: 8px;
+    text-align: center;
+}
+#h_list li:last-child a{
+    color: white;
+}
+#h_list li>a:hover{
+    color: #E72B2F;
+}
+#h_list li:last-child a:hover{
+    color: white;
+}

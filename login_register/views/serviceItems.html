@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>到位APP - 高品质上门服务</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="stylesheets/reset.css">
+    <link rel="stylesheet" href="stylesheets/serviceItems.css">
+</head>
+<body>
+    <div id="items_wrap">
+        {{include "../public/header"}}
+        <div id="items_content">
+            <div class="items_title">
+                <div class="left">
+                    <b>{{server.title}}</b>
+                    <span>营业时间 ：  </span><span>{{server.startTime}}-{{server.endTime}}</span>&nbsp
+                    <span>最近可预约时间 :  </span><span>09月07日 10:30</span>
+                </div>
+                <div class="right">
+                    <div>
+                        <span>{{server.orderTakingCount}}</span><br>
+                        <span>成功接单</span>
+                        <em>|</em>
+                    </div>
+                    <div>
+                        <span>{{server.orderTakingRate}}</span><br>
+                        <span>接单率</span>
+                        <em>|</em>
+                    </div>
+                    <div>
+                        <span>{{server.positiveCommentRate}}</span><br>
+                        <span>好评率</span>
+                    </div>
+                </div>
+            </div>
+            <div class="items_nav">
+                <ul class="navList">
+                    <li class="active">
+                        <a href="#">服务项目</a>
+                    </li>
+                    <li>
+                        <a href="#1">商家简介</a>
+                    </li>
+                    <li>
+                        <a href="#2">用户评论</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="items_detail">
+                <div class="detail_left">
+                    <div class="detail">
+                        <span>服务项目</span>
+                    </div>
+                    <div class="line"></div>
+                    <ul class="detail_list">
+                        {{each server.prices}}
+                        <li>
+                            <a href="/sort?id={{$value.id}}&tags={{server.categoryName}}">
+                                <img src={{$value.pic_url}}>
+                                <div class="text">
+                                    <span>{{$value.name}}</span>
+                                    <span>{{$value.description}}</span>
+                                    <span>
+                                        <b>{{$value.price}}</b>{{$value.price_unit}}
+                                        <span>已售{{$value.salesNum}}</span>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        {{/each}}
+                        <div id="1"></div>
+                    </ul>
+                    <div class="bus_detail">
+                        <div class="detail">
+                            <span>商家简介</span>
+                        </div>
+                        <div class="line"></div>
+                        <div class="bus_info">
+                            <div>
+                                <span>{{server.companyName}}</span>
+                                <img src="images/renzheng.jpg">
+                            </div>
+                            <p>{{server.description}}</p>
+                        </div>
+                        <div id="2"></div>
+                    </div>
+                    <div class="user_comment">
+                        <div class="detail">
+                            <span>用户评论 <span>({{comment.totalCount}}条评论)</span></span>
+                        </div>
+                        <div class="line"></div>
+                        <ul class="user_list">
+                            {{each comment.comments}}
+                            <li>
+                                <div class="avatar">
+                                    <img src={{$value.iconUrl}}>
+                                </div>
+                                <div class="user_detail">
+                                    <p>{{$value.nick}}</p>
+                                    <div class="score">
+                                        <span class="star">
+                                            <img src="images/red_star.png">
+                                            <img src="images/red_star.png">
+                                            <img src="images/red_star.png">
+                                            <img src="images/red_star.png">
+                                            <img src="images/red_star.png">
+                                        </span>
+                                        <span class="time">2017-09-07</span>
+                                    </div>
+                                    <p>{{$value.comment}}</p>
+                                    <div class="area">
+                                        <img src="images/position.jpg">
+                                        <span>{{$value.city}} {{$value.area}} </span>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                            </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+                <div class="detail_right">
+                    <div class="code1">
+                        <img src="images/erweima.png">
+                    </div>
+                    <div class="code2">
+                        <img src="images/daowayApp.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{include "../public/footer"}}
+    </div>
+</body>
+<script type="text/javascript" src="javascripts/jquery-1.12.3.js"></script>
+<script type="text/javascript" src="javascripts/serviceItems.js"></script>
+</html>

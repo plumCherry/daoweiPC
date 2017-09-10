@@ -1,0 +1,167 @@
+#b_content{
+    display: inline-block;
+    margin-bottom: 30px;
+    width: 100%;
+}
+#b_content .images{
+    width: 100%;
+    height: 300px;
+    background: url("../images/information.jpg");
+    background-position: 50%;
+}
+
+
+.info_content>div{
+    width: 100%;
+    height: 300px;
+}
+.info_content .info_odd{
+    background: white;
+}
+.info_content .info_even{
+    background: #F8F8F8;
+}
+.info_content .info_odd img{
+    float: left;
+    margin-left: 150px;
+    margin-top: 70px;
+}
+.info_content .info_even img{
+    float: right;
+    margin-right: 150px;
+    margin-top: 70px;
+}
+/*公共span*/
+.info_content>div>.common{
+    padding-top: 90px;
+    line-height: 60px;
+}
+.info_content>div>.common b{
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: -50px;
+}
+.info_content>div>.common span{
+    font-size: 22px;
+}
+.info_content>div>.odd{
+    float: right;
+    margin-right: 150px;
+}
+.info_content>div>.even{
+    float: left;
+    margin-left: 150px;
+}
+
+.info_content>div:nth-child(1) img{
+    width: 166px;
+    height: 166px;
+}
+.info_content>div:nth-child(2) img{
+    width: 168px;
+    height: 179px;
+}
+.info_content>div:nth-child(3) img{
+    width: 133px;
+    height: 178px;
+}
+.info_content>div:nth-child(4) img{
+    width: 341px;
+    height: 150px;
+}
+.info_content>div:nth-child(5) img{
+     width: 186px;
+     height: 204px;
+ }
+
+.table{
+    display: inline-block;
+    background: #F8F8F8;
+    width: 100%;
+   /* height: 600px;*/
+}
+.table>p{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 110px;
+}
+.table>p>b{
+    color: #fb474f
+}
+
+body, ul, li, i {
+    list-style: none;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+.cooperation-center{
+    padding-top: 20px;
+    width: 800px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+.cooperation-center .tanme{
+    line-height: 46px;
+    height: 46px;
+}
+.cooperation-center div i {
+    width: 120px;
+    text-align: right;
+    float: left;
+    display: block;
+}
+.cooperation-center div div {
+    float: left;
+}
+.cooperation-center div input[type=text], .cooperation-center div input[type=tel] {
+    width: 500px;
+    padding-left: 15px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 6px;
+    border: 1px solid #d1d1d1;
+    margin-left: 10px;
+}
+.cooperation-center .ched {
+    line-height: 40px;
+    height: 126px;
+}
+b, strong {
+    font-weight: 700;
+}
+.ched b input {
+    margin-right: 2px;
+}
+input[type=checkbox], input[type=radio] {
+    margin: 4px 0 0;
+    line-height: normal;
+}
+.ched label {
+    margin: 0 6px;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.tbtn {
+    width: 126px;
+    background: #fb474f;
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+    margin-top: 30px;
+}
+.cooperation-center p {
+    display: block;
+   /* -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;*/
+    font-size: 12px;
+}

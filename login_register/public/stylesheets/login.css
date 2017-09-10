@@ -1,0 +1,86 @@
+
+#login_page{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    width: 310px;
+    height: 290px;
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+}
+#login_page .head img{
+    width:290px;
+    margin: 20px 10px 10px 10px;
+}
+#login_contain{
+    margin: 0 15px;
+}
+#login_contain .input{
+    width: 290px;
+    height: 50px;
+}
+#login_contain .input input{
+    width: 230px;
+    height: 50px;
+    border: 1px solid gainsboro;
+    float: left;
+    vertical-align: bottom;
+}
+#login_contain .input input:hover{
+    border-top-color:deepskyblue;
+    box-shadow: 2px 2px 6px ;
+    border-right-color:deepskyblue;
+}
+::-webkit-input-placeholder{
+    font-size: 16px;
+    color: darkgrey;
+    padding-left: 6px;
+}
+#login_contain .input span{
+    float: left;
+    display: inline-block;
+    height: 50px;
+    width: 45px;
+    background: #EEEEEE;
+    vertical-align: bottom;
+    border: 1px solid gainsboro;
+}
+#login_contain .input span img{
+    height: 25px;
+    width: 25px;
+    margin-left: 10px;
+    margin-top: 12px;
+}
+#login_contain .sub{
+    float: left;
+    width: 285px;
+    height: 45px;
+    background: #286090;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+}
+#foot{
+    width: 290px;
+    height: 30px;
+    overflow: hidden;
+    font-size: 14px;
+}
+#foot a:nth-child(1){
+    height: 100%;
+    float: left;
+    margin-left:30px;
+    color: gray;
+
+}
+#foot a:nth-child(2){
+    float: right;
+    margin-right:30px;
+    color: gray;
+}
+

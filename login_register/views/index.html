@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>到位APP - 高品质上门服务</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="stylesheets/reset.css">
+    <link rel="stylesheet" href="stylesheets/index.css">
+</head>
+<body>
+    <div id="wrap">
+        {{include "../public/header"}}
+        <div id="i_wrap">
+            <ul class="i_img">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul class="i_circle">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div id="i_navs">
+                <ul class="list">
+                    {{each menu}}
+                    <li>
+                        <span class="rightIcon"></span>
+                        <a href="javascript:;">{{$value.name}}</a>
+                        <ul class="hoverList">
+                            {{each $value.items}}
+                            <li>
+                                <a href="javascript:;">{{$value}}</a>
+                            </li>
+                            {{/each}}
+                        </ul>
+                        <span class="arrow"></span>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+        <div id="i_content">
+            <ul class="i_homeClear">
+                {{each menu}}
+               <li class="lis">
+                  <div class="lis_wrap">
+                      <p class="text">{{$value.name}}</p>
+                      <div class="lis_head">
+                          <ul class="head">
+                              {{each $value.items}}
+                              <li>
+                                  <a href="javascript:;">{{$value}}</a>
+                              </li>
+                              {{/each}}
+                          </ul>
+                          <a class="right">更多服务> </a>
+                      </div>
+                      <ul class="imgList">
+                          {{each $value.showItems}}
+                          <li>
+                              <a href="/sort?id={{$value.id}}&tags={{$value.categoryName}}">
+                                  <img src={{$value.pic}}>
+                                  <h3>{{$value.serveDescription}}</h3>
+                                  <p>{{$value.serveRange}}</p>
+                                  <div class="left">
+                                      <span>{{$value.price}}</span><span>元/{{$value.serveTime}}</span>
+                                  </div>
+                                  <span class="right">查看详情</span>
+                              </a>
+                          </li>
+                          {{/each}}
+                      </ul>
+                      <ul class="textList">
+                          {{each $value.serveSource}}
+                          <li>
+                              <a href={{$value.href}}>{{$value.name}}</a>
+                          </li>
+                          {{/each}}
+                      </ul>
+                  </div>
+               </li>
+                {{/each}}
+            </ul>
+        </div>
+        {{include "../public/footer"}}
+    </div>
+</body>
+<script type="text/javascript" src="javascripts/jquery-1.12.3.js"></script>
+<script type="text/javascript" src="javascripts/index.js"></script>
+
+</html>

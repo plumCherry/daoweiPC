@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎登陆</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="stylesheets/login.css">
+    <link rel="stylesheet" href="stylesheets/reset.css">
+</head>
+<body>
+<div id="login_page">
+    <header>
+        <h1 class="head">
+            <img src="images/logo.png">
+        </h1>
+    </header>
+    <div id="login_contain">
+        <form action="/logins.html" method="post">
+           <div class="input">
+               <span>
+                   <img src="images/w-1.png">
+               </span>
+               <input type="text" name="username" placeholder="输入昵称或手机号">
+           </div>
+           <div class="input">
+               <span>
+                  <img src=" images/s2.png">
+               </span>
+               <input type="text" name="password" placeholder="输入密码">
+           </div>
+            <input type="submit" value="登录" class="sub">
+        </form>
+    </div>
+    <div id="foot">
+        <a href="javascript:;">忘记密码</a>
+        <a href="javascript:;">注册</a>
+    </div>
+</div>
+</body>
+
+<script src="javascripts/jquery-1.12.3.js" ></script>
+<script src="javascripts/login.js"></script>
+</html>

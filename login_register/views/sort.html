@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>到位APP - 高品质上门服务</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="stylesheets/reset.css">
+    <link rel="stylesheet" href="stylesheets/sort.css">
+</head>
+<body>
+    <div id="sort">
+        {{include "../public/header"}}
+        <div id="sortContent">
+            <div id="bgContent">
+                <div class="title">
+                    <p>所有分类 > {{tags}} > <b>{{sort.sericePrice.catName}}</b> </p>
+                </div>
+                <div class="sortLeft">
+                    <div class="top">
+                        <div class="imgLeft">
+                            <img src={{sort.sericePrice.picUrl}}>
+                            <div>
+                                <h3>{{sort.sericePrice.name}}</h3>
+                                <p>价格 <b><b>{{sort.sericePrice.price}}</b>{{sort.sericePrice.priceUnit}}</b></p>
+                                <p>已售<span>{{sort.sericePrice.salesNum}}</span></p>
+                            </div>
+                        </div>
+                        <div class="cordRight">
+                            <img src="images/erweima.png">
+                            <div>
+                                <p>扫一扫</p>
+                                <b>立即预约</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="serviceDes">
+                        <b>服务描述</b>
+                        <pre>
+{{sort.sericePrice.description}}
+                        </pre>
+                        <b>服务范围</b>
+                        <p>{{sort.service.coverArea}}</p>
+                        <b>服务时间</b>
+                        <p>{{sort.service.startTime}}-{{sort.service.endTime}}   最近可预约时间:<i>09月09日 12:00</i></p>
+                        <b>订购须知</b>
+                        <pre style="background: #FFFCF1">
+{{sort.service.orderingNotice}}
+                        </pre>
+                        <b>商家简介</b>
+                        <p>
+                            {{sort.service.description}}
+                        </p>
+                    </div>
+                </div>
+                <div class="sortRight">
+                    <div class="sortBox">
+                        <h3>服务商</h3>
+                        <img src={{sort.service.owner.iconUrl}}>
+                        <p>{{sort.service.title}}</p>
+                        <div>
+                            <p>成功接单<i>{{sort.sericePrice.orderTakingCount}}</i></p>
+                            <p>接单率<i>{{sort.sericePrice.orderTakingRate}}</i></p>
+                            <p>好评率<i>{{sort.sericePrice.positiveCommentRate}}</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{include "../public/footer"}}
+    </div>
+</body>
+</html>
